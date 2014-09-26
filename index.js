@@ -8,9 +8,10 @@ module.exports = function (options) {
     return function (options) {
         var snippet = template(options).replace("\n","").replace(/\s+/g," ");
         return function (req,res,next) {
-            req.locals.piwik = function () {
+            res.locals.piwik = function () {
                 return snippet;
             }
+            next()
         };
     }(options);
 };
