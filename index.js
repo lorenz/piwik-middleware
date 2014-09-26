@@ -1,7 +1,9 @@
 var ejs = require("ejs");
 var fs = require("fs");
+var path = require("path");
+
 var template = null;
-fs.readFile("template.ejs","utf-8",function (err,data) {
+fs.readFile(path.join(__dirname,"template.ejs"),"utf-8",function (err,data) {
     if (err) throw new Error(err);
     template = ejs.compile(data);
 });
