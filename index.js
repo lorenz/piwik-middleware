@@ -2,11 +2,7 @@ var ejs = require("ejs");
 var fs = require("fs");
 var path = require("path");
 
-var template = null;
-fs.readFile(path.join(__dirname,"template.ejs"),"utf-8",function (err,data) {
-    if (err) throw new Error(err);
-    template = ejs.compile(data);
-});
+var template = ejs.compile(fs.readFileSync(path.join(__dirname,"template.ejs"),"utf-8"));
 
 module.exports = function (options) {
     return function (options) {
