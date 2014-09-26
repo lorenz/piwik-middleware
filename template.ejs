@@ -1,0 +1,8 @@
+<script type="text/javascript" src="//<%= piwikUrl %>/piwik.js" async defer></script>
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['setSiteId', <%= siteId %>]);
+    _paq.push(['setTrackerUrl', '//<%= piwikUrl %>/piwik.php']);
+    <% if(typeof trackPageView == "undefined" || trackPageView!=false) { %> _paq.push(['trackPageView']); <% } %>
+    <% if(typeof linkTracking == "undefined" || linkTracking!=false) { %>_paq.push(['enableLinkTracking']); <% } %>
+</script>
