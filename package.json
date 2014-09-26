@@ -1,0 +1,25 @@
+{
+  "name": "piwik-middleware",
+  "version": "0.0.1",
+  "description": "A middleware for express/connect to simplify Piwik integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.dolansoft.org:lorenz/piwik-middleware"
+  },
+  "keywords": [
+    "piwik",
+    "analytics",
+    "middleware",
+    "express",
+    "connect"
+  ],
+  "author": "Lorenz Brun <lorenz@dolansoft.org>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^1.0.0"
+  }
+}
