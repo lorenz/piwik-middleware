@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.dolansoft.org:lorenz/piwik-middleware"
+    "url": "git@github.com:lorenz/piwik-middleware"
   },
   "keywords": [
     "piwik",
